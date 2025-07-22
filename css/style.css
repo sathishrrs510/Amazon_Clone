@@ -133,7 +133,7 @@ body{
 }
 #search-icon{
     width: 10%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 50px;
     background-color: var(--light-orange);
 }
@@ -232,7 +232,7 @@ body{
     /* display: flex;
     justify-content: space-between;
     align-items: center; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* width: 100%; */
 }
 ul{
@@ -243,7 +243,7 @@ ul{
     width: 94%;
     height: 40px;
     margin-left: 12px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .navlist{
     font-size: 15px;
@@ -309,7 +309,7 @@ ul a{
     gap: 20px 20px;
     margin: 20px 17px;
     /* background: #ffffff; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .grid-items{
     display: grid;
@@ -317,7 +317,7 @@ ul a{
     /* grid-auto-flow: column; */
     gap: 10px 15px;
     background: #ffffff;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 10px 15px 20px 15px;
     /* height: 300px; */
     /* width: 200px; */
@@ -495,7 +495,6 @@ footer{
 .copyright-container{
     background-color: #131A22;
     /* border: 1px solid red; */
-    height: 260px;
     padding-top: 30px; 
 }
 .copyright{
@@ -505,8 +504,7 @@ footer{
     /* border: 1px solid red; */
     margin: 0px 5px 20px 180px;
     width: 780px;
-    /* justify-content: space-between;
-    align-items: start; */
+    height: 130px;
 }
 .copy{
     font-size: 12px;
@@ -516,5 +514,90 @@ footer{
     font-size: 12px;
     text-align: center;
     padding-top: 20px;
+    padding-bottom: 30px;
     line-height: 18px;
+}
+
+/* @media for main-container */
+@media (max-width: 800px) {
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 20px;
+    margin: 20px 17px;
+    /* background: #ffffff; */
+}
+}
+
+@media (max-width: 700px) {
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px 20px;
+    margin: 20px 17px;
+    /* background: #ffffff; */
+}
+}
+
+/* @media for copyrights */
+@media (max-width: 900px) {
+.copyright{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 0px;
+    margin: 0px 0px 0px 200px;
+    height: 280px;
+}
+}
+@media (max-width: 720px) {
+.copyright{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px 0px;
+    margin: 0px 0px 0px 360px;
+    height: 500px;
+}
+}
+
+@media (max-width: 720px) {
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* border: 1px solid red; */
+    /* height: 500px; */
+    margin: 50px 180px 0px 180px;
+    padding: 0px 0px 50px 0px;
+}
+}
+
+@media (max-width: 900px) {
+.container-footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 50px 180px 0px 180px;
+    padding: 0px 0px 50px 0px;
+}
+}
+@media (max-width: 600px) {
+.container-footer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+    margin: 50px 100px 0px 250px;
+    padding: 0px 0px 50px 0px;
+}
+}
+
+@media (max-width: 600px) {
+.footer3{
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 0px 10px 10px 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 100px;
+    /* padding: 10px 150px; */
+}
 }
